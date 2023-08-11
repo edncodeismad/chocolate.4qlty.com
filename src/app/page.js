@@ -61,15 +61,15 @@ export default function Home() {
     <section>
       <h1 className='text-center'>Our Selection</h1>
       <div className='flex md:flex-row flex-col md:my-36 mx-auto items-center'>
-        <Image src={original} alt="dark" height={680}/>
+        <Image src={original} alt="dark" height={640}/>
         <p className='max-w-md my-auto md:mx-auto p-8'>The Gianduja spread. 60% Piedmont IGP hazelnut cream and Venezuelan pure chocolate. NO MILK, NO DAIRY PRODUCTS.</p>
       </div>
       <div className='flex md:flex-row flex-col-reverse md:my-36 mx-auto items-center'>
         <p className='max-w-md my-auto md:mx-auto p-8'>The Chocolate Fudge spread. 60% Piedmont IGP hazelnut cream and more Venezuelan pure chocolate. NO MILK, NO DAIRY PRODUCTS.</p>
-        <Image src={dark} alt="dark" height={680}/>
+        <Image src={dark} alt="dark" height={640}/>
       </div>
       <div className='flex md:flex-row flex-col md:my-36 mx-auto items-center'>
-        <Image src={zero} alt="dark" height={680}/>
+        <Image src={zero} alt="dark" height={640}/>
         <p className='max-w-md my-auto md:mx-auto p-8'>Pure Hazelnuts 60%, Crystallised Maltitol, Cocoa powder, Venezuelan Cocoa Mass, NO SUGAR, NO MILK, NO DAIRY PRODUCTS.</p>
       </div>
 
@@ -104,6 +104,10 @@ export default function Home() {
     <div id="foot">
       <div id="foot-content">
         <section className='m-auto'>
+          <Link href="https://4qlty.com" target="_blank" className='flex flex-row justify-center items-center'>
+            <p className='md:text-4xl text-2xl font-medium'>4qlty.com</p>
+            <Image src={linkIcon} height={26} alt="" className='mx-2'/>
+          </Link>
           <Link href="https://www.vasetto.it" target="_blank" className='flex flex-row justify-center items-center'>
             <p className='md:text-4xl text-2xl font-medium'>vasetto.it</p>
             <Image src={linkIcon} height={26} alt="" className='mx-2'/>
