@@ -104,11 +104,11 @@ export default function Home() {
     <div id="foot">
       <div id="foot-content">
         <section className='m-auto'>
-          <Link href="https://4qlty.com" target="_blank" className='flex flex-row justify-center items-center'>
+          <Link href="https://4qlty.com" target="_blank" className='flex flex-row justify-center items-center my-6'>
             <p className='md:text-4xl text-2xl font-medium'>4qlty.com</p>
             <Image src={linkIcon} height={26} alt="" className='mx-2'/>
           </Link>
-          <Link href="https://www.vasetto.it" target="_blank" className='flex flex-row justify-center items-center'>
+          <Link href="https://www.vasetto.it" target="_blank" className='flex flex-row justify-center items-center my-6'>
             <p className='md:text-4xl text-2xl font-medium'>vasetto.it</p>
             <Image src={linkIcon} height={26} alt="" className='mx-2'/>
           </Link>
