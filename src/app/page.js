@@ -32,7 +32,7 @@ export default function Home() {
       <div className="h-screen flex items-center justify-center" id="hero">
         <div className='max-w-[620px] mx-auto p-6 text-center h-fit'>
           <h1 id="intro-1" className='md:mb-20 mb-6'>Chocolate Spreads</h1>
-          <p id="intro-2" className='my-4'>We have a selection of chocolate spreads made locally by artisans in Italy, made with the highest quality ingredients and very high percentages of cacao.</p>
+          <p id="intro-2" className='my-4'>We have a selection of chocolate spreads made locally by artisans in Italy, made with the highest quality ingredients and very high percentages of cocoa.</p>
           <p id="intro-3" className='my-4'>The first Original spread, the famous "Gianduja", is a blend of the best Piedmont Hazelnut and Venezuelan chocolate, in addition to which we also offer eight different varieties and blends.</p>
           <Image id="intro-4" src={vegan} alt="vegan" className='ml-auto mt-10' height={50}/>
         </div>
@@ -61,15 +61,15 @@ export default function Home() {
     <section>
       <h1 className='text-center'>Our Selection</h1>
       <div className='flex md:flex-row flex-col md:my-36 mx-auto items-center'>
-        <Image src={original} alt="dark" height={320}/>
+        <Image src={original} alt="dark" height={680}/>
         <p className='max-w-md my-auto md:mx-auto p-8'>The Gianduja spread. 60% Piedmont IGP hazelnut cream and Venezuelan pure chocolate. NO MILK, NO DAIRY PRODUCTS.</p>
       </div>
       <div className='flex md:flex-row flex-col-reverse md:my-36 mx-auto items-center'>
         <p className='max-w-md my-auto md:mx-auto p-8'>The Chocolate Fudge spread. 60% Piedmont IGP hazelnut cream and more Venezuelan pure chocolate. NO MILK, NO DAIRY PRODUCTS.</p>
-        <Image src={dark} alt="dark" height={320}/>
+        <Image src={dark} alt="dark" height={680}/>
       </div>
       <div className='flex md:flex-row flex-col md:my-36 mx-auto items-center'>
-        <Image src={zero} alt="dark" height={320}/>
+        <Image src={zero} alt="dark" height={680}/>
         <p className='max-w-md my-auto md:mx-auto p-8'>Pure Hazelnuts 60%, Crystallised Maltitol, Cocoa powder, Venezuelan Cocoa Mass, NO SUGAR, NO MILK, NO DAIRY PRODUCTS.</p>
       </div>
 
