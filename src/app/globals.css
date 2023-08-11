@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: clamp(14px, 2vw, 16px);
+  font-weight: 300;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: clamp(28px, 5vw, 60px);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: clamp(24px, 4vw, 48px);
+  font-weight: 400;
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+}
+
+#hero {
+  background-image: url('./images/hero-chocolate.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: #F0F0F0;
+}
+
+section {
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+  padding: 105px 10px;
+}
+@media screen and (max-width: 992px) {
+  section {
+    padding: 45px 8px;
+  }
+}
+
+/* ANIMATIONS */
+@keyframes flyin {
+  from {
+    opacity: 0;
+    transform: translate(0, 40px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+#intro-1, #intro-2, #intro-3, #intro-4 {
+  opacity: 0;
+}
+#intro-1 {
+  animation: flyin 1.4s forwards;
+}
+#intro-2 {
+  animation: flyin 1.4s .4s forwards;
+}
+#intro-3 {
+  animation: flyin 1.4s .8s forwards;
+}
+#intro-4 {
+  animation: flyin 1.4s 1.2s forwards;
+}
+
+/* -------- */
+
+#cp-info {
+  background-color: #2B1408;
+  background-image: url('./images/CP-bg.png');
+  background-size: cover;
+  background-position: center;
+  color: #F0F0F0;
+}
+
+#q-info {
+  background-color: #4B023A;
+  background-image: url('./images/4q-bg.png');
+  background-size: cover;
+  background-position: center;
+  color: #F0F0F0;
+}
+
+#foot {
+  background-image: url('./images/TuttiVasetti.png');
+  background-size: cover;
+  background-position: center;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+  overflow: hidden;
+}
+#foot-content {
+  opacity: 0;
+  width: 0px;
+  background-color: #ffffff99;
+  height: 480px;
+  transition: all .6s ease;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#foot:hover #foot-content {
+  opacity: 1;
+  width: 100vw;
+}
+
+@media screen and (max-width: 992px) {
+  #foot {
+    height: 240px;
+  }
+  #foot-content {
+    opacity: 1;
+    width: 100vw;
+    height: 240px;
+  }
+}
+
+
+
+/* FOOTER */
+footer {
+  width: 100%;
+  font-size: 0.8rem;
+  letter-spacing: 1.3px;
+  padding: 10px;
+  background-color: rgb(12, 12, 12);
+  color: white;
+}
+footer a {
+  color: white;
+  display: block;
+}
+footer img.footer-logo {
+  height: 110px;
+}
+footer .row {
+  margin: 40px 0;
+}
+footer .row .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  text-align: center;
+}
+footer .row .col .footer-title {
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+footer .row .col a {
+  width: fit-content;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .row .col a:hover, footer .row .col a:active {
+  color: rgb(232, 232, 232);
+}
+footer .footer-bottom p {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.65rem;
+}
