@@ -74,6 +74,9 @@ section {
 }
 
 /* -------- */
+#graphic-2 {
+  transform: translate(0, -150px);
+}
 
 #cp-info {
   background-color: #2B1408;
