@@ -9,6 +9,8 @@ import Q from './images/4q-img.png'
 import linkIcon from './images/link.svg'
 import logoCP from './images/logo-cp.svg'
 import logo from './images/logowhite.svg'
+import graphic1 from './images/graphic1.png'
+import graphic2 from './images/graphic2.png'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -60,10 +62,12 @@ export default function Home() {
 
     <section>
       <h1 className='text-center'>Our Selection</h1>
+      <Image src={graphic1} alt="" width={380} className='absolute right-6 md:block hidden -z-10' />
       <div className='flex md:flex-row flex-col md:my-36 mx-auto items-center'>
         <Image src={original} alt="dark" height={640}/>
         <p className='max-w-md my-auto md:mx-auto p-8'>The Gianduja spread. 60% Piedmont IGP hazelnut cream and Venezuelan pure chocolate. NO MILK, NO DAIRY PRODUCTS.</p>
       </div>
+      <Image src={graphic2} alt="" width={460} className='absolute left-6 md:block hidden' id="graphic-2"/>
       <div className='flex md:flex-row flex-col-reverse md:my-36 mx-auto items-center'>
         <p className='max-w-md my-auto md:mx-auto p-8'>The Chocolate Fudge spread. 60% Piedmont IGP hazelnut cream and more Venezuelan pure chocolate. NO MILK, NO DAIRY PRODUCTS.</p>
         <Image src={dark} alt="dark" height={640}/>
