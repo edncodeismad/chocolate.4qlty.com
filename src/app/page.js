@@ -78,7 +78,7 @@ export default function Home() {
       </div>
 
       <Image src={spreads} alt="" width={1000} className='mx-auto'/>
-      <Link href="https://4qlty.com/spreads"><p className='text-center my-10 hover:underline text-2xl'>View all flavours on our website →</p></Link>
+      <Link href="https://www.4qlty.com/categories/spreads"><p className='text-center my-10 hover:underline text-2xl'>View all flavours on our website →</p></Link>
     </section>
 
     <div id="cp-info">
